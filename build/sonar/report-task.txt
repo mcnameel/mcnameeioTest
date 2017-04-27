@@ -1,0 +1,5 @@
+projectKey=edu.xavier.csci260.atinlay:OOOtracker_services
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/edu.xavier.csci260.atinlay:OOOtracker_services
+ceTaskId=AVuG4Dafi6D-wi2jRCr5
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVuG4Dafi6D-wi2jRCr5

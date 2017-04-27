@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class edu.xavier.csci260.atinlay.ApplicationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class edu.xavier.csci260.atinlay.ApplicationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/edu.xavier.csci260.atinlay.html">edu.xavier.csci260.atinlay</a> &gt; ApplicationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.263s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">accessSecuredResourceAuthenticatedThenOk</td>
+<td>0.092s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">accessSecuredResourceUnauthenticatedThenRedirectsToLogin</td>
+<td>0.027s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">accessUnsecuredResourceThenOk</td>
+<td>0.706s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">loginWithInvalidUserThenUnauthenticated</td>
+<td>0.032s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">loginWithValidUserThenAuthenticatedWithRoleHR</td>
+<td>0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">loginWithValidUserThenAuthenticatedWithRoleManager</td>
+<td>0.099s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">loginWithValidUserThenAuthenticatedWithRoleWorker</td>
+<td>0.120s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">requestPageForbidden</td>
+<td>0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">requestPageWithRole</td>
+<td>0.172s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>11:41:09.737 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class edu.xavier.csci260.atinlay.ApplicationTest]
+11:41:09.737 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+11:41:09.753 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+11:41:09.784 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [edu.xavier.csci260.atinlay.ApplicationTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+11:41:09.784 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [edu.xavier.csci260.atinlay.ApplicationTest], using SpringBootContextLoader
+11:41:09.803 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [edu.xavier.csci260.atinlay.ApplicationTest]: class path resource [edu/xavier/csci260/atinlay/ApplicationTest-context.xml] does not exist
+11:41:09.803 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [edu.xavier.csci260.atinlay.ApplicationTest]: class path resource [edu/xavier/csci260/atinlay/ApplicationTestContext.groovy] does not exist
+11:41:09.803 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [edu.xavier.csci260.atinlay.ApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+11:41:09.803 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [edu.xavier.csci260.atinlay.ApplicationTest]: ApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:41:09.896 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [edu.xavier.csci260.atinlay.ApplicationTest]
+11:41:09.896 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+11:41:09.911 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+11:41:09.911 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+11:41:09.911 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [edu/xavier/csci260/atinlay/] to resources [URL [file:/C:/Users/Luke/Documents/School/CSCI/OOOtracker_services/build/classes/test/edu/xavier/csci260/atinlay/], URL [file:/C:/Users/Luke/Documents/School/CSCI/OOOtracker_services/build/classes/main/edu/xavier/csci260/atinlay/]]
+11:41:09.911 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [C:\Users\Luke\Documents\School\CSCI\OOOtracker_services\build\classes\test\edu\xavier\csci260\atinlay]
+11:41:09.911 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [C:\Users\Luke\Documents\School\CSCI\OOOtracker_services\build\classes\test\edu\xavier\csci260\atinlay] for files matching pattern [C:/Users/Luke/Documents/School/CSCI/OOOtracker_services/build/classes/test/edu/xavier/csci260/atinlay/*.class]
+11:41:09.927 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [C:\Users\Luke\Documents\School\CSCI\OOOtracker_services\build\classes\main\edu\xavier\csci260\atinlay]
+11:41:09.927 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [C:\Users\Luke\Documents\School\CSCI\OOOtracker_services\build\classes\main\edu\xavier\csci260\atinlay] for files matching pattern [C:/Users/Luke/Documents/School/CSCI/OOOtracker_services/build/classes/main/edu/xavier/csci260/atinlay/*.class]
+11:41:09.931 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:edu/xavier/csci260/atinlay/*.class] to resources [file [C:\Users\Luke\Documents\School\CSCI\OOOtracker_services\build\classes\test\edu\xavier\csci260\atinlay\ApplicationTest.class], file [C:\Users\Luke\Documents\School\CSCI\OOOtracker_services\build\classes\main\edu\xavier\csci260\atinlay\Application.class]]
+11:41:09.966 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\Luke\Documents\School\CSCI\OOOtracker_services\build\classes\main\edu\xavier\csci260\atinlay\Application.class]
+11:41:09.966 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration edu.xavier.csci260.atinlay.Application for test class edu.xavier.csci260.atinlay.ApplicationTest
+11:41:09.982 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [edu.xavier.csci260.atinlay.ApplicationTest]: using defaults.
+11:41:09.982 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+11:41:10.013 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@670246a5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3553dd59, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1c28656f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@505b7100, org.springframework.test.context.transaction.TransactionalTestExecutionListener@251932c0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@e0b8a2f, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@5157959c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5a8f3dc7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@366c8b64, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@64642574, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@972a711, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2a30d2fd, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@78555b74]
+11:41:10.013 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [edu.xavier.csci260.atinlay.ApplicationTest]
+11:41:10.013 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [edu.xavier.csci260.atinlay.ApplicationTest]
+11:41:10.029 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [edu.xavier.csci260.atinlay.ApplicationTest]
+11:41:10.029 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [edu.xavier.csci260.atinlay.ApplicationTest]
+11:41:10.029 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@527b90fd testClass = ApplicationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7e1cc6ac testClass = ApplicationTest, locations = '{}', classes = '{class edu.xavier.csci260.atinlay.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@5cbf2e12 key = [Package Import edu.xavier.csci260.atinlay, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@5fd58257, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4d0b996f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e7e8512, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@548517de], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+11:41:10.029 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [edu.xavier.csci260.atinlay.ApplicationTest]
+11:41:10.029 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [edu.xavier.csci260.atinlay.ApplicationTest]
+11:41:10.098 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+11:41:10.098 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+11:41:10.098 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+11:41:10.098 [Test worker] DEBUG org.springframework.core.env.MutablePropertySources - Adding [inline] PropertySource with highest search precedence
+11:41:10.113 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+11:41:10.113 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.2.RELEASE)
+
+2017-04-19 11:41:10.588  INFO 5068 --- [    Test worker] e.x.csci260.atinlay.ApplicationTest      : Starting ApplicationTest on MSI with PID 5068 (started by Luke in C:\Users\Luke\Documents\School\CSCI\OOOtracker_services)
+2017-04-19 11:41:10.588  INFO 5068 --- [    Test worker] e.x.csci260.atinlay.ApplicationTest      : No active profile set, falling back to default profiles: default
+2017-04-19 11:41:10.890  INFO 5068 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2330cc6a: startup date [Wed Apr 19 11:41:10 EDT 2017]; root of context hierarchy
+2017-04-19 11:41:13.449  INFO 5068 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b56b073a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-19 11:41:13.984  INFO 5068 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/C:/Users/Luke/Documents/School/CSCI/OOOtracker_services/build/resources/main/schema.sql]
+2017-04-19 11:41:14.109  INFO 5068 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/C:/Users/Luke/Documents/School/CSCI/OOOtracker_services/build/resources/main/schema.sql] in 125 ms.
+2017-04-19 11:41:14.109  INFO 5068 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/C:/Users/Luke/Documents/School/CSCI/OOOtracker_services/build/resources/main/data.sql]
+2017-04-19 11:41:14.124  INFO 5068 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/C:/Users/Luke/Documents/School/CSCI/OOOtracker_services/build/resources/main/data.sql] in 15 ms.
+2017-04-19 11:41:14.124  INFO 5068 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/C:/Users/Luke/Documents/School/CSCI/OOOtracker_services/build/resources/test/data.sql]
+2017-04-19 11:41:14.124  INFO 5068 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/C:/Users/Luke/Documents/School/CSCI/OOOtracker_services/build/resources/test/data.sql] in 0 ms.
+2017-04-19 11:41:14.340  INFO 5068 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-19 11:41:14.374  INFO 5068 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-19 11:41:14.456  INFO 5068 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-04-19 11:41:14.456  INFO 5068 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-04-19 11:41:14.456  INFO 5068 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-04-19 11:41:14.502  INFO 5068 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-19 11:41:14.678  INFO 5068 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-04-19 11:41:14.942  INFO 5068 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-04-19 11:41:14.942  INFO 5068 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-04-19 11:41:14.992  INFO 5068 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-04-19 11:41:15.868 DEBUG 5068 --- [    Test worker] eGlobalAuthenticationAutowiredConfigurer : Eagerly initializing {webSecurityConfig=edu.xavier.csci260.atinlay.config.WebSecurityConfig$$EnhancerBySpringCGLIB$$13b39ad0@303ea6d1}
+2017-04-19 11:41:16.005  INFO 5068 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/includes/**'], []
+2017-04-19 11:41:16.005  INFO 5068 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/assets/**'], []
+2017-04-19 11:41:16.111 DEBUG 5068 --- [    Test worker] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for ExactUrl [processUrl='/login?error']
+2017-04-19 11:41:16.111 DEBUG 5068 --- [    Test worker] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for ExactUrl [processUrl='/login']
+2017-04-19 11:41:16.111 DEBUG 5068 --- [    Test worker] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for ExactUrl [processUrl='/login']
+2017-04-19 11:41:16.111 DEBUG 5068 --- [    Test worker] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'hasRole('ROLE_HR')', for Ant [pattern='/human-resources/**']
+2017-04-19 11:41:16.111 DEBUG 5068 --- [    Test worker] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'hasRole('ROLE_MANAGER')', for Ant [pattern='/manager/**']
+2017-04-19 11:41:16.128 DEBUG 5068 --- [    Test worker] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/']
+2017-04-19 11:41:16.129 DEBUG 5068 --- [    Test worker] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/home']
+2017-04-19 11:41:16.129 DEBUG 5068 --- [    Test worker] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/login']
+2017-04-19 11:41:16.129 DEBUG 5068 --- [    Test worker] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for Ant [pattern='/includes/**']
+2017-04-19 11:41:16.129 DEBUG 5068 --- [    Test worker] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for Ant [pattern='/assets/**']
+2017-04-19 11:41:16.129 DEBUG 5068 --- [    Test worker] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for org.springframework.security.web.util.matcher.AnyRequestMatcher@1
+2017-04-19 11:41:16.129 DEBUG 5068 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2017-04-19 11:41:16.144 DEBUG 5068 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2017-04-19 11:41:16.162  INFO 5068 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ae93adc, org.springframework.security.web.context.SecurityContextPersistenceFilter@36e8eb02, org.springframework.security.web.header.HeaderWriterFilter@5f80227d, org.springframework.security.web.csrf.CsrfFilter@8776f12, org.springframework.security.web.authentication.logout.LogoutFilter@790675e6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2d078f09, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@bc9ffa4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46dc48af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f65717, org.springframework.security.web.session.SessionManagementFilter@42c2760, org.springframework.security.web.access.ExceptionTranslationFilter@18c399c1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@51940173]
+2017-04-19 11:41:16.162 DEBUG 5068 --- [    Test worker] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@5ef31122
+2017-04-19 11:41:16.162 DEBUG 5068 --- [    Test worker] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@6f47395b
+2017-04-19 11:41:16.178 DEBUG 5068 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2017-04-19 11:41:16.178 DEBUG 5068 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2017-04-19 11:41:16.178  INFO 5068 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@6b939179, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@448d3669, org.springframework.security.web.context.SecurityContextPersistenceFilter@1f762d38, org.springframework.security.web.header.HeaderWriterFilter@602fad98, org.springframework.security.web.authentication.logout.LogoutFilter@1837a87c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@66bc0b2d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@721b1846, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f4528f0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@426ea8b6, org.springframework.security.web.session.SessionManagementFilter@79415041, org.springframework.security.web.access.ExceptionTranslationFilter@41b596b6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@792ad379]
+2017-04-19 11:41:16.616  INFO 5068 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2017-04-19 11:41:16.616  INFO 5068 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-04-19 11:41:16.697  INFO 5068 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/index],methods=[GET]}&quot; onto public java.lang.String edu.xavier.csci260.atinlay.controller.GreetingController.index()
+2017-04-19 11:41:16.697  INFO 5068 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/calendar],methods=[GET]}&quot; onto public java.lang.String edu.xavier.csci260.atinlay.controller.GreetingController.calendar()
+2017-04-19 11:41:16.697  INFO 5068 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/login]}&quot; onto public java.lang.String edu.xavier.csci260.atinlay.controller.GreetingController.login()
+2017-04-19 11:41:16.697  INFO 5068 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/home || / || /logout],methods=[GET]}&quot; onto public java.lang.String edu.xavier.csci260.atinlay.controller.GreetingController.home()
+2017-04-19 11:41:16.697  INFO 5068 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/hello],methods=[GET]}&quot; onto public java.lang.String edu.xavier.csci260.atinlay.controller.GreetingController.hello()
+2017-04-19 11:41:16.697  INFO 5068 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/manager/forTesting]}&quot; onto public java.lang.String edu.xavier.csci260.atinlay.controller.ManagerController.messages()
+2017-04-19 11:41:16.697  INFO 5068 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/messages/{username}]}&quot; onto public java.lang.String edu.xavier.csci260.atinlay.controller.MessageController.messages(org.springframework.ui.Model,java.lang.String)
+2017-04-19 11:41:16.716  INFO 5068 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-19 11:41:16.716  INFO 5068 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-19 11:41:16.732  INFO 5068 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-04-19 11:41:16.732  INFO 5068 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/home] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-04-19 11:41:16.748  INFO 5068 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-04-19 11:41:16.748  INFO 5068 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/addEmployee] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-04-19 11:41:16.749  INFO 5068 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/messages] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-04-19 11:41:16.750  INFO 5068 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/requests] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-04-19 11:41:16.750  INFO 5068 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/newRequest] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-04-19 11:41:16.771  INFO 5068 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-19 11:41:16.771  INFO 5068 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-19 11:41:16.806  INFO 5068 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-19 11:41:17.171  INFO 5068 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}&quot; onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2017-04-19 11:41:17.175  INFO 5068 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2017-04-19 11:41:17.175  INFO 5068 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-19 11:41:17.175  INFO 5068 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-19 11:41:17.175  INFO 5068 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-19 11:41:17.175  INFO 5068 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2017-04-19 11:41:17.175  INFO 5068 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-19 11:41:17.175  INFO 5068 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-19 11:41:17.175  INFO 5068 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2017-04-19 11:41:17.175  INFO 5068 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-19 11:41:17.194  INFO 5068 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2017-04-19 11:41:17.194  INFO 5068 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map&lt;java.lang.String, java.lang.String&gt;)
+2017-04-19 11:41:17.194  INFO 5068 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-19 11:41:17.194  INFO 5068 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-19 11:41:17.194  INFO 5068 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2017-04-19 11:41:17.194  INFO 5068 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-19 11:41:17.194  INFO 5068 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped &quot;{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}&quot; onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-19 11:41:17.348  INFO 5068 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2330cc6a: startup date [Wed Apr 19 11:41:10 EDT 2017]; root of context hierarchy
+2017-04-19 11:41:17.972  INFO 5068 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1356 ms
+2017-04-19 11:41:18.566  INFO 5068 --- [    Test worker] e.x.csci260.atinlay.ApplicationTest      : Started ApplicationTest in 8.453 seconds (JVM running for 9.709)
+2017-04-19 11:41:18.673 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/includes/**'
+2017-04-19 11:41:18.673 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/assets/**'
+2017-04-19 11:41:18.673 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/includes/**'
+2017-04-19 11:41:18.673 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/assets/**'
+2017-04-19 11:41:18.673 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/includes/**'
+2017-04-19 11:41:18.689 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/assets/**'
+2017-04-19 11:41:18.692 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2017-04-19 11:41:18.692 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2017-04-19 11:41:18.692 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2017-04-19 11:41:18.692 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2017-04-19 11:41:18.692 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2017-04-19 11:41:18.692 DEBUG 5068 --- [    Test worker] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@28d99b10
+2017-04-19 11:41:18.692 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 4 of 12 in additional filter chain; firing Filter: 'CsrfFilter'
+2017-04-19 11:41:18.692 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 5 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2017-04-19 11:41:18.692 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/logout'
+2017-04-19 11:41:18.692 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 6 of 12 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+2017-04-19 11:41:18.692 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/login'
+2017-04-19 11:41:18.692 DEBUG 5068 --- [    Test worker] w.a.UsernamePasswordAuthenticationFilter : Request is to process authentication
+2017-04-19 11:41:18.692 DEBUG 5068 --- [    Test worker] o.s.s.authentication.ProviderManager     : Authentication attempt using org.springframework.security.authentication.dao.DaoAuthenticationProvider
+2017-04-19 11:41:18.709 DEBUG 5068 --- [    Test worker] s.CompositeSessionAuthenticationStrategy : Delegating to org.springframework.security.web.authentication.session.ChangeSessionIdAuthenticationStrategy@1a9256d9
+2017-04-19 11:41:18.709 DEBUG 5068 --- [    Test worker] s.CompositeSessionAuthenticationStrategy : Delegating to org.springframework.security.web.csrf.CsrfAuthenticationStrategy@4f2f3d04
+2017-04-19 11:41:18.709 DEBUG 5068 --- [    Test worker] w.a.UsernamePasswordAuthenticationFilter : Authentication success. Updating SecurityContextHolder to contain: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@7ccf42a3: Principal: org.springframework.security.core.userdetails.User@d162537e: Username: worker; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_WORKER; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_WORKER
+2017-04-19 11:41:18.724 DEBUG 5068 --- [    Test worker] o.s.s.web.DefaultRedirectStrategy        : Redirecting to '/hello'
+2017-04-19 11:41:18.724 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : HttpSession being created as SecurityContext is non-default
+2017-04-19 11:41:18.724 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : SecurityContext 'org.springframework.security.core.context.SecurityContextImpl@7ccf42a3: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@7ccf42a3: Principal: org.springframework.security.core.userdetails.User@d162537e: Username: worker; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_WORKER; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_WORKER' stored to HttpSession: 'org.springframework.mock.web.MockHttpSession@d092347
+2017-04-19 11:41:18.724 DEBUG 5068 --- [    Test worker] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2017-04-19 11:41:18.740 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/includes/**'
+2017-04-19 11:41:18.740 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/assets/**'
+2017-04-19 11:41:18.740 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Obtained a valid SecurityContext from SPRING_SECURITY_CONTEXT: 'org.springframework.security.core.context.SecurityContextImpl@7ccf42a3: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@7ccf42a3: Principal: org.springframework.security.core.userdetails.User@d162537e: Username: worker; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_WORKER; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_WORKER'
+2017-04-19 11:41:18.755 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/includes/**'
+2017-04-19 11:41:18.755 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/assets/**'
+2017-04-19 11:41:18.755 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : / at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2017-04-19 11:41:18.755 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : / at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2017-04-19 11:41:18.755 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2017-04-19 11:41:18.755 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2017-04-19 11:41:18.771 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : / at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2017-04-19 11:41:18.771 DEBUG 5068 --- [    Test worker] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@28d99b10
+2017-04-19 11:41:18.771 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : / at position 4 of 12 in additional filter chain; firing Filter: 'CsrfFilter'
+2017-04-19 11:41:18.771 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : / at position 5 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2017-04-19 11:41:18.771 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /' doesn't match 'POST /logout
+2017-04-19 11:41:18.771 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : / at position 6 of 12 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+2017-04-19 11:41:18.771 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /' doesn't match 'POST /login
+2017-04-19 11:41:18.771 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : / at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2017-04-19 11:41:18.771 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : / at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2017-04-19 11:41:18.771 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : / at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2017-04-19 11:41:18.771 DEBUG 5068 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@9055e4a6: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: 2; Granted Authorities: ROLE_ANONYMOUS'
+2017-04-19 11:41:18.771 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : / at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2017-04-19 11:41:18.771 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : / at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2017-04-19 11:41:18.771 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : / at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2017-04-19 11:41:18.771 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/human-resources/**'
+2017-04-19 11:41:18.771 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/manager/**'
+2017-04-19 11:41:18.771 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/'
+2017-04-19 11:41:18.771 DEBUG 5068 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /; Attributes: [permitAll]
+2017-04-19 11:41:18.771 DEBUG 5068 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@9055e4a6: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: 2; Granted Authorities: ROLE_ANONYMOUS
+2017-04-19 11:41:18.787 DEBUG 5068 --- [    Test worker] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@5bfa59e7, returned: 1
+2017-04-19 11:41:18.787 DEBUG 5068 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorization successful
+2017-04-19 11:41:18.787 DEBUG 5068 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : RunAsManager did not change Authentication object
+2017-04-19 11:41:18.787 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : / reached end of additional filter chain; proceeding with original chain
+2017-04-19 11:41:19.433 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2017-04-19 11:41:19.437 DEBUG 5068 --- [    Test worker] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2017-04-19 11:41:19.439 DEBUG 5068 --- [    Test worker] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2017-04-19 11:41:19.484 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/includes/**'
+2017-04-19 11:41:19.485 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/assets/**'
+2017-04-19 11:41:19.486 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/includes/**'
+2017-04-19 11:41:19.488 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/assets/**'
+2017-04-19 11:41:19.488 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2017-04-19 11:41:19.488 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2017-04-19 11:41:19.489 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2017-04-19 11:41:19.489 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2017-04-19 11:41:19.490 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2017-04-19 11:41:19.490 DEBUG 5068 --- [    Test worker] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@28d99b10
+2017-04-19 11:41:19.490 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 4 of 12 in additional filter chain; firing Filter: 'CsrfFilter'
+2017-04-19 11:41:19.491 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 5 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2017-04-19 11:41:19.491 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/logout'
+2017-04-19 11:41:19.492 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 6 of 12 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+2017-04-19 11:41:19.492 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/login'
+2017-04-19 11:41:19.492 DEBUG 5068 --- [    Test worker] w.a.UsernamePasswordAuthenticationFilter : Request is to process authentication
+2017-04-19 11:41:19.493 DEBUG 5068 --- [    Test worker] o.s.s.authentication.ProviderManager     : Authentication attempt using org.springframework.security.authentication.dao.DaoAuthenticationProvider
+2017-04-19 11:41:19.494 DEBUG 5068 --- [    Test worker] s.CompositeSessionAuthenticationStrategy : Delegating to org.springframework.security.web.authentication.session.ChangeSessionIdAuthenticationStrategy@1a9256d9
+2017-04-19 11:41:19.494 DEBUG 5068 --- [    Test worker] s.CompositeSessionAuthenticationStrategy : Delegating to org.springframework.security.web.csrf.CsrfAuthenticationStrategy@4f2f3d04
+2017-04-19 11:41:19.496 DEBUG 5068 --- [    Test worker] w.a.UsernamePasswordAuthenticationFilter : Authentication success. Updating SecurityContextHolder to contain: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@eb81d3: Principal: org.springframework.security.core.userdetails.User@31c90fad: Username: manager; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_MANAGER; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_MANAGER
+2017-04-19 11:41:19.497 DEBUG 5068 --- [    Test worker] o.s.s.web.DefaultRedirectStrategy        : Redirecting to '/hello'
+2017-04-19 11:41:19.498 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : HttpSession being created as SecurityContext is non-default
+2017-04-19 11:41:19.499 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : SecurityContext 'org.springframework.security.core.context.SecurityContextImpl@eb81d3: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@eb81d3: Principal: org.springframework.security.core.userdetails.User@31c90fad: Username: manager; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_MANAGER; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_MANAGER' stored to HttpSession: 'org.springframework.mock.web.MockHttpSession@4c83e16b
+2017-04-19 11:41:19.500 DEBUG 5068 --- [    Test worker] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2017-04-19 11:41:19.560 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/includes/**'
+2017-04-19 11:41:19.560 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/assets/**'
+2017-04-19 11:41:19.560 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Obtained a valid SecurityContext from SPRING_SECURITY_CONTEXT: 'org.springframework.security.core.context.SecurityContextImpl@eb81d3: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@eb81d3: Principal: org.springframework.security.core.userdetails.User@31c90fad: Username: manager; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_MANAGER; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_MANAGER'
+2017-04-19 11:41:19.568 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/includes/**'
+2017-04-19 11:41:19.568 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/assets/**'
+2017-04-19 11:41:19.568 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2017-04-19 11:41:19.568 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2017-04-19 11:41:19.568 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2017-04-19 11:41:19.568 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2017-04-19 11:41:19.568 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2017-04-19 11:41:19.568 DEBUG 5068 --- [    Test worker] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@28d99b10
+2017-04-19 11:41:19.568 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 4 of 12 in additional filter chain; firing Filter: 'CsrfFilter'
+2017-04-19 11:41:19.568 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 5 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2017-04-19 11:41:19.568 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /hello' doesn't match 'POST /logout
+2017-04-19 11:41:19.568 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 6 of 12 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+2017-04-19 11:41:19.568 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /hello' doesn't match 'POST /login
+2017-04-19 11:41:19.569 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2017-04-19 11:41:19.569 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2017-04-19 11:41:19.569 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2017-04-19 11:41:19.569 DEBUG 5068 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@9054b1a2: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@1c07a: RemoteIpAddress: 127.0.0.1; SessionId: 4; Granted Authorities: ROLE_ANONYMOUS'
+2017-04-19 11:41:19.569 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2017-04-19 11:41:19.569 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2017-04-19 11:41:19.569 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2017-04-19 11:41:19.570 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/human-resources/**'
+2017-04-19 11:41:19.570 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/manager/**'
+2017-04-19 11:41:19.570 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/'
+2017-04-19 11:41:19.570 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/home'
+2017-04-19 11:41:19.570 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/login'
+2017-04-19 11:41:19.570 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/includes/**'
+2017-04-19 11:41:19.570 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/assets/**'
+2017-04-19 11:41:19.570 DEBUG 5068 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /hello; Attributes: [authenticated]
+2017-04-19 11:41:19.570 DEBUG 5068 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@9054b1a2: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@1c07a: RemoteIpAddress: 127.0.0.1; SessionId: 4; Granted Authorities: ROLE_ANONYMOUS
+2017-04-19 11:41:19.570 DEBUG 5068 --- [    Test worker] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@5bfa59e7, returned: -1
+2017-04-19 11:41:19.577 DEBUG 5068 --- [    Test worker] o.s.s.w.a.ExceptionTranslationFilter     : Access is denied (user is anonymous); redirecting to authentication entry point
+
+org.springframework.security.access.AccessDeniedException: Access is denied
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:84) ~[spring-security-core-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:233) ~[spring-security-core-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124) ~[spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114) ~[spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106) [spring-boot-actuator-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at edu.xavier.csci260.atinlay.ApplicationTest.accessSecuredResourceUnauthenticatedThenRedirectsToLogin(ApplicationTest.java:103) [test/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_101]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-3.1.jar:3.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-3.1.jar:3.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-3.1.jar:3.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-3.1.jar:3.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_101]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-3.1.jar:3.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-3.1.jar:3.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-3.1.jar:3.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-3.1.jar:3.1]
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) [na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109) [gradle-testing-base-3.1.jar:3.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_101]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-3.1.jar:3.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-3.1.jar:3.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377) [gradle-messaging-3.1.jar:3.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54) [gradle-base-services-3.1.jar:3.1]
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40) [gradle-base-services-3.1.jar:3.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_101]
+
+2017-04-19 11:41:19.577 DEBUG 5068 --- [    Test worker] o.s.s.w.util.matcher.AndRequestMatcher   : Trying to match using Ant [pattern='/**', GET]
+2017-04-19 11:41:19.577 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request '/hello' matched by universal pattern '/**'
+2017-04-19 11:41:19.577 DEBUG 5068 --- [    Test worker] o.s.s.w.util.matcher.AndRequestMatcher   : Trying to match using NegatedRequestMatcher [requestMatcher=Ant [pattern='/**/favicon.ico']]
+2017-04-19 11:41:19.577 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/**/favicon.ico'
+2017-04-19 11:41:19.577 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.NegatedRequestMatcher  : matches = true
+2017-04-19 11:41:19.577 DEBUG 5068 --- [    Test worker] o.s.s.w.util.matcher.AndRequestMatcher   : Trying to match using NegatedRequestMatcher [requestMatcher=MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@346cd0f3, matchingMediaTypes=[application/json], useEquals=false, ignoredMediaTypes=[*/*]]]
+2017-04-19 11:41:19.577 DEBUG 5068 --- [    Test worker] o.s.s.w.u.m.MediaTypeRequestMatcher      : httpRequestMediaTypes=[]
+2017-04-19 11:41:19.577 DEBUG 5068 --- [    Test worker] o.s.s.w.u.m.MediaTypeRequestMatcher      : Did not match any media types
+2017-04-19 11:41:19.577 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.NegatedRequestMatcher  : matches = true
+2017-04-19 11:41:19.577 DEBUG 5068 --- [    Test worker] o.s.s.w.util.matcher.AndRequestMatcher   : Trying to match using NegatedRequestMatcher [requestMatcher=RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]]
+2017-04-19 11:41:19.577 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.NegatedRequestMatcher  : matches = true
+2017-04-19 11:41:19.577 DEBUG 5068 --- [    Test worker] o.s.s.w.util.matcher.AndRequestMatcher   : All requestMatchers returned true
+2017-04-19 11:41:19.577 DEBUG 5068 --- [    Test worker] o.s.s.w.s.HttpSessionRequestCache        : DefaultSavedRequest added to Session: DefaultSavedRequest[http://localhost/hello]
+2017-04-19 11:41:19.577 DEBUG 5068 --- [    Test worker] o.s.s.w.a.ExceptionTranslationFilter     : Calling Authentication entry point.
+2017-04-19 11:41:19.577 DEBUG 5068 --- [    Test worker] o.s.s.web.DefaultRedirectStrategy        : Redirecting to 'http://localhost/login'
+2017-04-19 11:41:19.577 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2017-04-19 11:41:19.577 DEBUG 5068 --- [    Test worker] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2017-04-19 11:41:19.608 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/includes/**'
+2017-04-19 11:41:19.608 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/assets/**'
+2017-04-19 11:41:19.608 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/includes/**'
+2017-04-19 11:41:19.608 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/assets/**'
+2017-04-19 11:41:19.608 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2017-04-19 11:41:19.608 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2017-04-19 11:41:19.608 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2017-04-19 11:41:19.608 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2017-04-19 11:41:19.608 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2017-04-19 11:41:19.608 DEBUG 5068 --- [    Test worker] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@28d99b10
+2017-04-19 11:41:19.608 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 4 of 12 in additional filter chain; firing Filter: 'CsrfFilter'
+2017-04-19 11:41:19.608 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 5 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2017-04-19 11:41:19.608 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/logout'
+2017-04-19 11:41:19.608 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 6 of 12 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+2017-04-19 11:41:19.608 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/login'
+2017-04-19 11:41:19.608 DEBUG 5068 --- [    Test worker] w.a.UsernamePasswordAuthenticationFilter : Request is to process authentication
+2017-04-19 11:41:19.608 DEBUG 5068 --- [    Test worker] o.s.s.authentication.ProviderManager     : Authentication attempt using org.springframework.security.authentication.dao.DaoAuthenticationProvider
+2017-04-19 11:41:19.608 DEBUG 5068 --- [    Test worker] o.s.s.p.JdbcUserDetailsManager           : Query returned no results for user 'invalid'
+2017-04-19 11:41:19.624 DEBUG 5068 --- [    Test worker] o.s.s.a.dao.DaoAuthenticationProvider    : User 'invalid' not found
+2017-04-19 11:41:19.624 DEBUG 5068 --- [    Test worker] w.a.UsernamePasswordAuthenticationFilter : Authentication request failed: org.springframework.security.authentication.BadCredentialsException: Bad credentials
+
+org.springframework.security.authentication.BadCredentialsException: Bad credentials
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:151) ~[spring-security-core-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174) ~[spring-security-core-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199) ~[spring-security-core-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94) ~[spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) ~[spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:124) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106) [spring-boot-actuator-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at edu.xavier.csci260.atinlay.ApplicationTest.loginWithInvalidUserThenUnauthenticated(ApplicationTest.java:91) [test/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_101]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-3.1.jar:3.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-3.1.jar:3.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-3.1.jar:3.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-3.1.jar:3.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_101]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-3.1.jar:3.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-3.1.jar:3.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-3.1.jar:3.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-3.1.jar:3.1]
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) [na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109) [gradle-testing-base-3.1.jar:3.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_101]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-3.1.jar:3.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-3.1.jar:3.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377) [gradle-messaging-3.1.jar:3.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54) [gradle-base-services-3.1.jar:3.1]
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40) [gradle-base-services-3.1.jar:3.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_101]
+
+2017-04-19 11:41:19.624 DEBUG 5068 --- [    Test worker] w.a.UsernamePasswordAuthenticationFilter : Updated SecurityContextHolder to contain null Authentication
+2017-04-19 11:41:19.624 DEBUG 5068 --- [    Test worker] w.a.UsernamePasswordAuthenticationFilter : Delegating to authentication failure handler org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler@14d5100f
+2017-04-19 11:41:19.624 DEBUG 5068 --- [    Test worker] .a.SimpleUrlAuthenticationFailureHandler : Redirecting to /login?error
+2017-04-19 11:41:19.624 DEBUG 5068 --- [    Test worker] o.s.s.web.DefaultRedirectStrategy        : Redirecting to '/login?error'
+2017-04-19 11:41:19.624 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2017-04-19 11:41:19.624 DEBUG 5068 --- [    Test worker] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2017-04-19 11:41:19.624 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/includes/**'
+2017-04-19 11:41:19.624 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/assets/**'
+2017-04-19 11:41:19.624 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : HttpSession returned null object for SPRING_SECURITY_CONTEXT
+2017-04-19 11:41:19.624 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: org.springframework.mock.web.MockHttpSession@51bc577a. A new one will be created.
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/manager/forTesting'; against '/includes/**'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/manager/forTesting'; against '/assets/**'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/manager/forTesting'; against '/includes/**'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/manager/forTesting'; against '/assets/**'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : HttpSession being created as SecurityContext is non-default
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : SecurityContext 'org.springframework.security.core.context.SecurityContextImpl@cb9d37e7: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@cb9d37e7: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_HR; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_HR' stored to HttpSession: 'org.springframework.mock.web.MockHttpSession@5c027c8f
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/manager/forTesting'; against '/includes/**'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/manager/forTesting'; against '/assets/**'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Obtained a valid SecurityContext from SPRING_SECURITY_CONTEXT: 'org.springframework.security.core.context.SecurityContextImpl@cb9d37e7: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@cb9d37e7: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_HR; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_HR'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@28d99b10
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 4 of 12 in additional filter chain; firing Filter: 'CsrfFilter'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 5 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /manager/forTesting' doesn't match 'POST /logout
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 6 of 12 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /manager/forTesting' doesn't match 'POST /login
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : SecurityContextHolder not populated with anonymous token, as it already contained: 'org.springframework.security.authentication.UsernamePasswordAuthenticationToken@cb9d37e7: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_HR; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_HR'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/manager/forTesting'; against '/human-resources/**'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/manager/forTesting'; against '/manager/**'
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /manager/forTesting; Attributes: [hasRole('ROLE_MANAGER')]
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@cb9d37e7: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_HR; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_HR
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@5bfa59e7, returned: -1
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] o.s.s.w.a.ExceptionTranslationFilter     : Access is denied (user is not anonymous); delegating to AccessDeniedHandler
+
+org.springframework.security.access.AccessDeniedException: Access is denied
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:84) ~[spring-security-core-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:233) ~[spring-security-core-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124) ~[spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114) ~[spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) [spring-security-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106) [spring-boot-actuator-1.5.2.RELEASE.jar:1.5.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at edu.xavier.csci260.atinlay.ApplicationTest.requestPageForbidden(ApplicationTest.java:71) [test/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_101]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114) [gradle-testing-jvm-3.1.jar:3.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57) [gradle-testing-jvm-3.1.jar:3.1]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66) [gradle-testing-jvm-3.1.jar:3.1]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-3.1.jar:3.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_101]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-3.1.jar:3.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-3.1.jar:3.1]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-3.1.jar:3.1]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-3.1.jar:3.1]
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) [na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109) [gradle-testing-base-3.1.jar:3.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_101]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-3.1.jar:3.1]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-3.1.jar:3.1]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377) [gradle-messaging-3.1.jar:3.1]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54) [gradle-base-services-3.1.jar:3.1]
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40) [gradle-base-services-3.1.jar:3.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_101]
+
+2017-04-19 11:41:19.639 DEBUG 5068 --- [    Test worker] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/manager/forTesting'; against '/includes/**'
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/manager/forTesting'; against '/assets/**'
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : HttpSession being created as SecurityContext is non-default
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : SecurityContext 'org.springframework.security.core.context.SecurityContextImpl@799d4a50: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@799d4a50: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_MANAGER; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_MANAGER' stored to HttpSession: 'org.springframework.mock.web.MockHttpSession@3f70138
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/manager/forTesting'; against '/includes/**'
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/manager/forTesting'; against '/assets/**'
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Obtained a valid SecurityContext from SPRING_SECURITY_CONTEXT: 'org.springframework.security.core.context.SecurityContextImpl@799d4a50: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@799d4a50: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_MANAGER; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_MANAGER'
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@28d99b10
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 4 of 12 in additional filter chain; firing Filter: 'CsrfFilter'
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 5 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /manager/forTesting' doesn't match 'POST /logout
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 6 of 12 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /manager/forTesting' doesn't match 'POST /login
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : SecurityContextHolder not populated with anonymous token, as it already contained: 'org.springframework.security.authentication.UsernamePasswordAuthenticationToken@799d4a50: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_MANAGER; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_MANAGER'
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/manager/forTesting'; against '/human-resources/**'
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/manager/forTesting'; against '/manager/**'
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /manager/forTesting; Attributes: [hasRole('ROLE_MANAGER')]
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@799d4a50: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_MANAGER; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_MANAGER
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@5bfa59e7, returned: 1
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorization successful
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : RunAsManager did not change Authentication object
+2017-04-19 11:41:19.655 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /manager/forTesting reached end of additional filter chain; proceeding with original chain
+2017-04-19 11:41:19.789 DEBUG 5068 --- [    Test worker] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2017-04-19 11:41:19.805 DEBUG 5068 --- [    Test worker] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/includes/**'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/assets/**'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : HttpSession being created as SecurityContext is non-default
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : SecurityContext 'org.springframework.security.core.context.SecurityContextImpl@ca25360: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@ca25360: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_USER; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER' stored to HttpSession: 'org.springframework.mock.web.MockHttpSession@384e7a3f
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/includes/**'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/assets/**'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Obtained a valid SecurityContext from SPRING_SECURITY_CONTEXT: 'org.springframework.security.core.context.SecurityContextImpl@ca25360: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@ca25360: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_USER; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@28d99b10
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 4 of 12 in additional filter chain; firing Filter: 'CsrfFilter'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 5 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /hello' doesn't match 'POST /logout
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 6 of 12 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /hello' doesn't match 'POST /login
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 7 of 12 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 8 of 12 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 9 of 12 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : SecurityContextHolder not populated with anonymous token, as it already contained: 'org.springframework.security.authentication.UsernamePasswordAuthenticationToken@ca25360: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_USER; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 10 of 12 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 11 of 12 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello at position 12 of 12 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/human-resources/**'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/manager/**'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/home'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/login'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/includes/**'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/hello'; against '/assets/**'
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /hello; Attributes: [authenticated]
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@ca25360: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_USER; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@5bfa59e7, returned: 1
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorization successful
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.s.w.a.i.FilterSecurityInterceptor    : RunAsManager did not change Authentication object
+2017-04-19 11:41:19.813 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /hello reached end of additional filter chain; proceeding with original chain
+2017-04-19 11:41:19.901 DEBUG 5068 --- [    Test worker] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2017-04-19 11:41:19.901 DEBUG 5068 --- [    Test worker] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/includes/**'
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/assets/**'
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/includes/**'
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/assets/**'
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 1 of 12 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 2 of 12 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 3 of 12 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@28d99b10
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 4 of 12 in additional filter chain; firing Filter: 'CsrfFilter'
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 5 of 12 in additional filter chain; firing Filter: 'LogoutFilter'
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/logout'
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] o.s.security.web.FilterChainProxy        : /login at position 6 of 12 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/login'
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] w.a.UsernamePasswordAuthenticationFilter : Request is to process authentication
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] o.s.s.authentication.ProviderManager     : Authentication attempt using org.springframework.security.authentication.dao.DaoAuthenticationProvider
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] s.CompositeSessionAuthenticationStrategy : Delegating to org.springframework.security.web.authentication.session.ChangeSessionIdAuthenticationStrategy@1a9256d9
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] s.CompositeSessionAuthenticationStrategy : Delegating to org.springframework.security.web.csrf.CsrfAuthenticationStrategy@4f2f3d04
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] w.a.UsernamePasswordAuthenticationFilter : Authentication success. Updating SecurityContextHolder to contain: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@8322fec3: Principal: org.springframework.security.core.userdetails.User@d0a: Username: hr; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_HR; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_HR
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] o.s.s.web.DefaultRedirectStrategy        : Redirecting to '/hello'
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : HttpSession being created as SecurityContext is non-default
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : SecurityContext 'org.springframework.security.core.context.SecurityContextImpl@8322fec3: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@8322fec3: Principal: org.springframework.security.core.userdetails.User@d0a: Username: hr; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_HR; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_HR' stored to HttpSession: 'org.springframework.mock.web.MockHttpSession@60691747
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/includes/**'
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/assets/**'
+2017-04-19 11:41:19.904 DEBUG 5068 --- [    Test worker] w.c.HttpSessionSecurityContextRepository : Obtained a valid SecurityContext from SPRING_SECURITY_CONTEXT: 'org.springframework.security.core.context.SecurityContextImpl@8322fec3: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@8322fec3: Principal: org.springframework.security.core.userdetails.User@d0a: Username: hr; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_HR; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_HR'
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.1</a> at Apr 19, 2017 11:41:24 AM</p>
+</div>
+</div>
+</body>
+</html>
